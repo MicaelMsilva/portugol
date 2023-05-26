@@ -1,0 +1,27 @@
+		cadeia algo
+inteiro idade
+inteiro segundos = 1
+inteiro minutos = 60 * segundos
+inteiro horas = 60 * minutos
+inteiro dia = 24 * horas
+inteiro ano = 365 * dia
+inteiro decadam = (ano * 10) / (60)
+inteiro anoh = ano / (60 * 60)
+
+escreva("Qual é a sua idade? ")
+leia(idade)
+inteiro idades = idade * ano
+
+escreva("O que deseja saber? ")
+leia(algo)
+
+se algo = "decadam" entao
+    escreva(decadam)
+senao se algo = "anoh" entao
+    escreva(anoh)
+senao se algo = "idades" entao
+    escreva(idades)
+senao se algo = "ano" entao
+    escreva(ano)
+senao
+    escreva("Opção inválida")
